@@ -1,0 +1,58 @@
+{
+    "primary_action":{
+        "action_text":"Start",
+        "action_type":"START_TASK",
+        "payload":{
+            "action":"start"
+        },
+        "uri": http:///v1.2/task/data?task_id=6009530
+    },
+    "show_extra_info":true,
+    "show_booking_id":false,
+    "banner":null,
+    "body":{
+        "primary_text":"$task_data.taskTypeDisplayName",
+        "title":"$task_data.licensePlate",
+        "sub_title_one":"$bike_data.model",
+        "sub_title_two":"$bike_data.type",
+        "flag":"$bike_data.status",
+        "image_url":"$bike_data.image",
+        "hub_location":"$task_data.hubLocation",
+        "task_count":"$task_data.taskCount",
+        "taskId":"$task_data.taskId",
+        "bookingId": "$task_data.bookingId"
+    },
+    "extra_info":[
+        {
+            "icon_url":"helmet_icon.svg",
+            "value":"$bike_data.helmet_status",
+            "subtext":""
+        },
+        {
+            "icon_url":"fuel_icon.svg",
+            "value":"$bike_data.fuel_percentage",
+            "subtext":"$bike_data.est_fuel_level_at"
+        },
+        {
+            "icon_url":"ev_battery_icon.svg",
+            "value":"$bike_data.battery_percentage",
+            "subtext":""
+        },
+        {
+            "icon_url":"battery_icon.svg",
+            "value":"$bike_data.ext_battery_level",
+            "subtext":"$bike_data.battery_level_at"
+        }
+    ],
+    "secondary_actions":[
+        {
+            "action_text":"Cancel Task",
+            "action_type":"STATIC_CANCEL",
+            "payload":{
+                "action":"cancel"
+            },
+            "uri":null
+        }
+    ],
+    "progress_flag":null
+}
