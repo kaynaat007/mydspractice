@@ -20,10 +20,8 @@ class Trie:
             curr['#'] = {}
 
 
-
-
-
-
 def findMaximumXOR(nums: List[int]) -> int:
+    pass
+
 
 
