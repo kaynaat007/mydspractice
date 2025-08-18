@@ -21,7 +21,7 @@ def function(s):
     return util(s, k, n)
 
 s = 'AB'
-s = 'ABC'
-s  = 'ABCD'
+#s = 'ABC'
+#s  = 'ABCD'
 print(function(s))
 

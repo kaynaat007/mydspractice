@@ -34,4 +34,8 @@ def scoreOfParentheses(S) -> int:
 
 S = '((())(()))'
 # S = ''
+S = '(())()'
+S = '((((()))))'
+S = '((()))'
+S = '(()())'
 print(scoreOfParentheses(S))
